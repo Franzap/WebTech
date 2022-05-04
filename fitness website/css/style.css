@@ -851,7 +851,7 @@ section {
   background: #f00;
 }
 
-.footer .box-container .box form .email {
+.footer .box-container .box div .mappa {
   margin-bottom: 1rem;
   width: 100%;
   background: #111;
@@ -938,6 +938,9 @@ section {
     -webkit-box-direction: normal;
     -ms-flex-flow: column;
     flex-flow: column;
+  }
+  .mappa{
+  padding-right: 100px;
   }
 }
 
