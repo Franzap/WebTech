@@ -5,7 +5,8 @@ include_once "connection.php";
 
 if ( !isset($_POST['Email'], $_POST['Username'], $_POST['Password']) ) {
     // Could not get the data that should have been sent.
-    exit('Please fill all fields!');
+    //exit('Please fill all fields!');
+    print_r($_POST['Email'], $_POST['Username'], $_POST['Password']);
 } else {
     // echo "info: " . $_POST['Email'] . $_POST[Username'] . $_POST['password'];
 }
@@ -19,7 +20,7 @@ if ($connection->query($query) === TRUE) {
 
     // redirect alla pagina della lista di todo
     //header("Location: login.php");
-    echo "Ciao";
+    //echo "Ciao";
 
 } else {
 
@@ -30,4 +31,6 @@ if ($connection->query($query) === TRUE) {
 
 
 
+
+//echo ($_POST["Email"]);
 ?>

@@ -7,18 +7,16 @@ if ( !isset($_POST['Username'], $_POST['Password']) ) {
     // Could not get the data that should have been sent.
     exit('Please fill both the username and password fields!');
 } else {
-     echo "username" . $_POST['Username'] . "password" . $_POST['Password'];
-    header("location: homePage.html");
+    // echo "username" . $_POST['username'] . "password" . $_POST['password'];
 }
-
+/*
 // query per selezionare utente che si sta loggando
-//$query = "SELECT * FROM Utente WHERE username = " . $_POST['Username'];
-//print_r($query);
+// $query = "SELECT * FROM user WHERE email = " . $_POST['username'];
 // query tramite connessione al db
-//$result = $connection->query($query);
+// $result = $connection->query($query);
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-/*if ($stmt = $connection->prepare('SELECT idUser, password FROM user WHERE email = ?')) {
+if ($stmt = $connection->prepare('SELECT idUser, password FROM user WHERE email = ?')) {
     // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
     $stmt->bind_param('s', $_POST['username']);
     $stmt->execute();
@@ -56,4 +54,5 @@ if ( !isset($_POST['Username'], $_POST['Password']) ) {
 
     $stmt->close();
 }*/
+
 ?>
