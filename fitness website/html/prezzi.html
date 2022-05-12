@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
+
 <!-- header section starts      -->
 
 <header class="header">
@@ -25,55 +26,72 @@
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <nav class="navbar">
-        <a href="index.html" style="background-color: red">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">Chi siamo</a>
         <a href="features.html">Features</a>
-        <a href="prezzi.html">Prezzi</a>
+        <a href="prezzi.html" style="background-color: red">Prezzi</a>
         <a href="trainers.html">Allenatori</a>
         <a href="blogs.html">Blogs</a>
         <a href="login.html">Login</a>
     </nav>
 
+
 </header>
+<ng-component></ng-component>
 
 <!-- header section ends     -->
 
-<!-- about section starts  -->
+<!-- pricing section starts  -->
+<section class="pricing" id="pricing">
 
-<section class="about" id="about">
-
-    <div class="image">
-        <img src="images/about-img.jpg" alt="">
+    <div class="plan">
+        <h3>Piano Economico</h3>
+        <div class="price"><span>€</span>30<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> Cardio</p>
+            <p> <i class="fas fa-check"></i> Sala Pesi </p>
+        </div>
+        <a href="#" class="btn">Scopri i Prezzi</a>
     </div>
 
-    <div class="content">
-        <span>chi siamo</span>
-        <h3 class="title">Ogni giorno è un'opportunità per migliorare</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione quia accusamus dicta inventore nobis obcaecati vero odio, id dolorum. Consequatur ex, aperiam deserunt nostrum perferendis illum unde ipsa? Consequatur, distinctio?</p>
-        <div class="box-container">
-            <div class="box">
-                <h3><i class="fas fa-check"></i>body and mind</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-            </div>
-            <div class="box">
-                <h3><i class="fas fa-check"></i>healthy life</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-            </div>
-            <div class="box">
-                <h3><i class="fas fa-check"></i>strategies</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-            </div>
-            <div class="box">
-                <h3><i class="fas fa-check"></i>workout</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, enim.</p>
-            </div>
+    <div class="plan basic">
+        <h3>Piano Base</h3>
+        <div class="price"><span>€</span>50<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> Personal Trainer</p>
+            <p> <i class="fas fa-check"></i> Cardio</p>
+            <p> <i class="fas fa-check"></i> Sala Pesi </p>
+            <p> <i class="fas fa-check"></i> Accesso ad un singolo corso a scelta </p>
+
         </div>
-        <a href="#" class="btn">read more</a>
+        <a href="#" class="btn">get started</a>
+    </div>
+
+    <div class="plan">
+        <h3>Piano Premium </h3>
+        <div class="price"><span>€</span>80<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> personal trainer </p>
+            <p> <i class="fas fa-check"></i> cardio  </p>
+            <p> <i class="fas fa-check"></i> sala pesi </p>
+            <p> <i class="fas fa-check"></i> dieta </p>
+            <p> <i class="fas fa-check"></i> risultati complessivi </p>
+            <p> <i class="fas fa-check"></i> Accesso a tutti i corsi </p>
+        </div>
+        <a href="#" class="btn">get started</a>
+    </div>
+
+    <div class="plan">
+        <h3>Corso Tabata</h3>
+        <div class="price"><span>€</span>25<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i>Accesso illimitato al corso Tabata </p>
+
+        </div>
+        <a href="#" class="btn">Scopri i Prezzi</a>
     </div>
 
 </section>
-
-<!-- about section ends -->
 
 <!-- footer section starts  -->
 

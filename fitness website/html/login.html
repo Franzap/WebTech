@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -29,70 +29,74 @@
         <a href="index.html">Home</a>
         <a href="about.html">Chi siamo</a>
         <a href="features.html">Features</a>
-        <a href="prezzi.html" style="background-color: red">Prezzi</a>
+        <a href="prezzi.html">Prezzi</a>
         <a href="trainers.html">Allenatori</a>
         <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
+        <a href="login.html"style="background-color: red">Login</a>
     </nav>
 
-
 </header>
-<ng-component></ng-component>
 
 <!-- header section ends     -->
 
-<!-- pricing section starts  -->
-<section class="pricing" id="pricing">
+<div class="login-wrap">
+    <div class="login-html">
 
-    <div class="plan">
-        <h3>Piano Economico</h3>
-        <div class="price"><span>€</span>30<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i> Cardio</p>
-            <p> <i class="fas fa-check"></i> Sala Pesi </p>
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Accedi</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrati</label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <form method="post"action="login.php">
+
+                    <div class="group">
+                        <br>
+                        <label for="user" class="label"></label>
+                        <input type="text" name="Username" placeholder="Username" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label"></label>
+                        <input type="password" name="Password" placeholder="Password" class="input" data-type="password">
+                    </div>
+
+                    <div class="group">
+                        <br><br>
+                        <input type="submit" name="login" class="button" value="Accedi">
+
+                    </div>
+                    <div class="hr"></div>
+                </form>
+            </div>
+
+
+            <div class="sign-up-htm">
+                <form method="post"action="register.php">
+                    <div class="group">
+                        <input  type="text" name="Email" placeholder="Email" class="input">
+                    </div>
+                    <div class="group">
+                        <input id="user" type="text" name="Username" placeholder="Username" class="input">
+                    </div>
+                    <div class="group">
+                        <input type="password" class="input" name="Password" placeholder="Password" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="pass" type="password" class="input" placeholder="Ripeti Password" data-type="password">
+                    </div>
+
+                    <div class="group">
+                        <input type="submit" class="button" name="register" value="Registrati">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
         </div>
-        <a href="#" class="btn">Scopri i Prezzi</a>
+
     </div>
-
-    <div class="plan basic">
-        <h3>Piano Base</h3>
-        <div class="price"><span>€</span>50<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i> Personal Trainer</p>
-            <p> <i class="fas fa-check"></i> Cardio</p>
-            <p> <i class="fas fa-check"></i> Sala Pesi </p>
-            <p> <i class="fas fa-check"></i> Accesso ad un singolo corso a scelta </p>
-
-        </div>
-        <a href="#" class="btn">get started</a>
-    </div>
-
-    <div class="plan">
-        <h3>Piano Premium </h3>
-        <div class="price"><span>€</span>80<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i> personal trainer </p>
-            <p> <i class="fas fa-check"></i> cardio  </p>
-            <p> <i class="fas fa-check"></i> sala pesi </p>
-            <p> <i class="fas fa-check"></i> dieta </p>
-            <p> <i class="fas fa-check"></i> risultati complessivi </p>
-            <p> <i class="fas fa-check"></i> Accesso a tutti i corsi </p>
-        </div>
-        <a href="#" class="btn">get started</a>
-    </div>
-
-    <div class="plan">
-        <h3>Corso Tabata</h3>
-        <div class="price"><span>€</span>25<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i>Accesso illimitato al corso Tabata </p>
-
-        </div>
-        <a href="#" class="btn">Scopri i Prezzi</a>
-    </div>
-
-</section>
-
+</div>
 <!-- footer section starts  -->
 
 <section class="footer">
@@ -141,10 +145,13 @@
 </section>
 
 
+</body>
+
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
-<!-- footer section ends -->
-</body>
+<div class="credit"> created by <span>mr. web designer</span> | all rights reserved! </div>
+
+<!-- footer section ends --><!-- footer section ends -->
