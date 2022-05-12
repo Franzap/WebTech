@@ -1,7 +1,36 @@
+<?php session_start();?>
+
 <?php
 
-include_once "connection.php";
+include 'connection.php';
 
+if(isset($_POST['login'])){
+    echo "Operazione Andata a Buon Fine";
+} else {
+    echo "Qualcosa è andato storto, riprova";
+}
+
+$Username = $_POST['Username'];
+$Password = $_POST['Password'];
+
+$Username = mysqli_real_escape_string($connection , $Username);
+$Password = mysqli_real_escape_string($connection , $Password);
+
+$query = "SELECT * FROM Utente WHERE Username = '{$Username}'";
+
+$trova_utente = mysqli_query($connection, $query);
+
+if (!$trova_utente){
+    die('Richiesta Fallita Porco di Dio' . mysqli_error($connection));
+}
+
+while ($row = mysqli_fetch_array($trova_utente)){
+    $Username = $row['Email'];
+    $Password = $row['Password'];
+}
+
+
+/*
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['Username'], $_POST['Password']) ) {
     // Could not get the data that should have been sent.
@@ -9,9 +38,14 @@ if ( !isset($_POST['Username'], $_POST['Password']) ) {
 } else {
     // echo "username" . $_POST['username'] . "password" . $_POST['password'];
 }
+
+$query = "SELECT * FROM user WHERE email = " . $_POST['Email'];
+
+while ($row = mysqli_fetch_array($))
+
 /*
 // query per selezionare utente che si sta loggando
-// $query = "SELECT * FROM user WHERE email = " . $_POST['username'];
+
 // query tramite connessione al db
 // $result = $connection->query($query);
 
