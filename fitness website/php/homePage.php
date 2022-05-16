@@ -3,12 +3,16 @@
 <?php session_start();?>
 
 <?php
+
 if($_SESSION['ruolo'] == "Admin"){
     header('Location: admin.php');
+    exit();
 } elseif($_SESSION['ruolo'] == "PT") {
     header('Location: pt.php');
+    exit();
 }  {
     header('Location: homePage.php');
+    exit();
 }
 
 ?>
@@ -50,8 +54,10 @@ if($_SESSION['ruolo'] == "Admin"){
     </nav>
 
 </header>
-
+<body>
+<div
 <h1>AREA RISERVATA</h1>
-
-<h3>Ciao, <?php echo $_SESSION['Username']?> Benvenuto/a gentile utente</h3>
-
+ style="text-decoration-color: white "
+    <h3>Ciao, <?php echo $_SESSION['Username']?> Benvenuto/a gentile utente</h3>
+</div>
+</body>
