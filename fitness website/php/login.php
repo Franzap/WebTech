@@ -21,12 +21,23 @@ $query = "SELECT * FROM Utente WHERE Username = '{$Username}'";
 $trova_utente = mysqli_query($connection, $query);
 
 if (!$trova_utente){
-    die('Richiesta Fallita Porco di Dio' . mysqli_error($connection));
+    die('Richiesta Fallita' . mysqli_error($connection));
 }
 
 while ($row = mysqli_fetch_array($trova_utente)){
-    $Username = $row['Email'];
-    $Password = $row['Password'];
+    $nomeUtente = $row['Email'];
+    $passUtente = $row['Password'];
+    $ruoloUtente = $row['Ruolo'];
+}
+
+if ($Username === $nomeUtente && $Password === $passUtente){
+
+    $_SESSION['utente'] = $nomeUtente;
+    $_SESSION['ruolo'] = $ruoloUtente;
+
+    header('Location: ../../fitness%20website/php/homePage.php');
+}else{
+    header('Location: ../../fitness%20website/php/homePage.php');
 }
 
 

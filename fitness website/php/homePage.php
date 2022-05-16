@@ -2,6 +2,17 @@
 
 <?php session_start();?>
 
+<?php
+if($_SESSION['ruolo'] == "Admin"){
+    header('Location: admin.php');
+} elseif($_SESSION['ruolo'] == "PT") {
+    header('Location: pt.php');
+}  {
+    header('Location: homePage.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
