@@ -1,15 +1,6 @@
 <?php
 
-include 'connection.php';
-
-session_start();
-
-
-if($_SESSION['ruolo'] == "Admin") {
-    header('Location: admin.php');
-} else if($_SESSION['ruolo'] == "PT") {
-    header('Location: pt.php');
-}
+include "../php/session_init.php";
 
 ?>
 
@@ -40,8 +31,8 @@ if($_SESSION['ruolo'] == "Admin") {
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <nav class="navbar">
-        <a href="../../fitness%20website/html/index.html"style="background-color: red">Home</a>
-        <a href="../php/eventi.php">Eventi</a>
+        <a href="../../fitness%20website/html/index.html">Home</a>
+        <a href="../php/eventi.php" style="background-color: red">Eventi</a>
         <a href="../../fitness%20website/php/prenotazioni.php">Prenotazioni</a>
         <a href="../../fitness%20website/html/prezzi.html">Prezzi</a>
         <a href="../../fitness%20website/html/trainers.html">Allenatori</a>
@@ -50,9 +41,3 @@ if($_SESSION['ruolo'] == "Admin") {
     </nav>
 
 </header>
-<body>
-<div
-<h1 style="color: white">AREA RISERVATA</h1>
-    <h3>Ciao, <?php echo $_SESSION['Username']?> Benvenuto/a gentile utente</h3>
-</div>
-</body>

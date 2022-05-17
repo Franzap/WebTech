@@ -1,8 +1,10 @@
-<?php session_start();?>
+
 
 <?php
 
 include 'connection.php';
+
+session_start();
 
 if(isset($_POST['login'])){
     echo "Operazione Andata a Buon Fine";
@@ -25,7 +27,7 @@ if (!$trova_utente){
 }
 
 while ($row = mysqli_fetch_array($trova_utente)){
-    $nomeUtente = $row['Email'];
+    $nomeUtente = $row['Username'];
     $passUtente = $row['Password'];
     $ruoloUtente = $row['Ruolo'];
 }
@@ -36,8 +38,9 @@ if ($Username === $nomeUtente && $Password === $passUtente){
     $_SESSION['ruolo'] = $ruoloUtente;
 
     header('Location: ../../fitness%20website/php/homePage.php');
+    echo "ciao";
 }else{
-    header('Location: ../../fitness%20website/php/homePage.php');
+    echo "Credenziali Sbagliate!!!";
 }
 
 

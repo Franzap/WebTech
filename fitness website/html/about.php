@@ -1,3 +1,10 @@
+<?php
+
+    include "../php/session_init.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,12 +29,12 @@
  
     <nav class="navbar">
         <a href="index.html" style="background-color: red">Home</a>
-        <a href="about.html">Chi siamo</a>
+        <a href="about.php">Chi siamo</a>
         <a href="features.html">Features</a>
         <a href="prezzi.html">Prezzi</a>
         <a href="trainers.html">Allenatori</a>
         <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
+        <a href="../../fitness%20website/html/index.html"><button type="button" class="btn btn-danger">Logout <?php echo $_SESSION['ruolo']?></a>
     </nav>
 
 </header>
