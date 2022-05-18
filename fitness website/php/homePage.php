@@ -35,18 +35,18 @@ if($_SESSION['ruolo'] == "Admin") {
 
 <header class="header">
 
-    <a href="index.html" class="logo"> <span>L</span>ight<span>W</span>eight</a>
+    <a href="../html/index.php" class="logo"> <span>L</span>ight<span>W</span>eight</a>
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <nav class="navbar">
-        <a href="../../fitness%20website/html/index.html"style="background-color: red">Home</a>
+        <a href="../html/index.php" style="background-color: red">Home</a>
         <a href="../php/eventi.php">Eventi</a>
         <a href="../../fitness%20website/php/prenotazioni.php">Prenotazioni</a>
-        <a href="../../fitness%20website/html/prezzi.html">Prezzi</a>
-        <a href="../../fitness%20website/html/trainers.html">Allenatori</a>
+        <a href="../html/prezzi.php">Prezzi</a>
+        <a href="../html/trainers.php">Allenatori</a>
         <a href="../../fitness%20website/php/profilo.php">Profilo</a>
-        <a href="../../fitness%20website/html/index.html"><button type="button" class="btn btn-danger">Logout <?php echo $_SESSION['ruolo']?></a>
+        <a href="../html/index.php"><button type="button" class="btn btn-danger">Logout <?php echo $_SESSION['ruolo']?></a>
     </nav>
 
 </header>

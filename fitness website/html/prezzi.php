@@ -1,3 +1,9 @@
+
+<?php
+
+include "../php/session_init.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,91 +24,84 @@
 
 <header class="header">
 
-    <a href="index.html" class="logo"> <span>L</span>ight<span>W</span>eight</a>
+    <a href="index.php" class="logo"> <span>L</span>ight<span>W</span>eight</a>
 
     <nav class="navbar">
-        <a href="index.html"style="background-color: red">Home</a>
-        <a href="about.php">Chi siamo</a>
-        <a href="features.html">Features</a>
-        <a href="prezzi.html">Prezzi</a>
-        <a href="trainers.html">Allenatori</a>
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
+        <a href="../html/index.php" style="background-color: red">Home</a>
+        <a href="../html/about.php">Chi siamo</a>
+        <a href="../html/features.php">Features</a>
+        <a href="../html/prezzi.php">Prezzi</a>
+        <a href="../html/trainers.php">Allenatori</a>
+        <a href="../html/blogs.php">Blogs</a>
+        <a href="../html/login.php">Login</a>
     </nav>
 
+
 </header>
+<ng-component></ng-component>
 
 <!-- header section ends     -->
 
-<!-- trainers section starts  -->
+<!-- pricing section starts  -->
+<section class="pricing" id="pricing">
 
-<section class="trainers" id="trainers">
-
-    <h1 class="heading"> <span>expert trainers</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="../images/trainer-1.jpg" alt="">
-            <div class="content">
-                <span>Trainer</span>
-                <h3>Francesco Zappacosta</h3>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                </div>
-            </div>
+    <div class="plan">
+        <h3>Piano Economico</h3>
+        <div class="price"><span>€</span>30<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> Cardio</p>
+            <p> <i class="fas fa-check"></i> Sala Pesi </p>
         </div>
+        <a href="#" class="btn">Prenotati</a>
+    </div>
 
-        <div class="box">
-            <img src="../images/trainer-2.jpg" alt="">
-            <div class="content">
-                <span>Trainer</span>
-                <h3>Lorenzo Salvi</h3>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                </div>
-            </div>
+    <div class="plan basic">
+        <h3>Piano Base</h3>
+        <div class="price"><span>€</span>50<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> Personal Trainer</p>
+            <p> <i class="fas fa-check"></i> Cardio</p>
+            <p> <i class="fas fa-check"></i> Sala Pesi </p>
+            <p> <i class="fas fa-check"></i> Accesso ad un singolo corso a scelta </p>
+
         </div>
+        <a href="#" class="btn">Prenotati</a>
+    </div>
 
-        <div class="box">
-            <img src="../images/trainer-3.jpg" alt="">
-            <div class="content">
-                <span>Trainer</span>
-                <h3>Luca Di Laudo</h3>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                </div>
-            </div>
+    <div class="plan">
+        <h3>Piano Premium </h3>
+        <div class="price"><span>€</span>80<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> personal trainer </p>
+            <p> <i class="fas fa-check"></i> cardio  </p>
+            <p> <i class="fas fa-check"></i> sala pesi </p>
+            <p> <i class="fas fa-check"></i> dieta </p>
+            <p> <i class="fas fa-check"></i> risultati complessivi </p>
+            <p> <i class="fas fa-check"></i> Accesso a tutti i corsi </p>
         </div>
+        <a href="#" class="btn">Prenotati</a>
+    </div>
 
-        <div class="box">
-            <img src="../images/trainer-4.jpg" alt="">
-            <div class="content">
-                <span>Trainer</span>
-                <h3>Gianna Di Giovanni</h3>
-                <div class="share">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-twitter"></a>
-                    <a href="#" class="fab fa-pinterest"></a>
-                    <a href="#" class="fab fa-linkedin"></a>
-                </div>
-            </div>
+    <div class="plan">
+        <h3>Corso Tabata</h3>
+        <div class="price"><span>€</span>25<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i>Accesso illimitato al corso Tabata </p>
+
         </div>
+        <a href="#" class="btn">Prenotati</a>
+    </div>
+    <div class="plan">
+        <h3>Corso Crossfit</h3>
+        <div class="price"><span>€</span>25<span>/mese</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i>Accesso illimitato al corso Crossfit </p>
 
+        </div>
+        <a href="#" class="btn">Prenotati</a>
     </div>
 
 </section>
-
-<!-- trainers section ends -->
 
 <!-- footer section starts  -->
 
@@ -158,5 +157,4 @@
 <script src="js/script.js"></script>
 
 <!-- footer section ends -->
-
 </body>

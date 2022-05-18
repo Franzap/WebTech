@@ -1,3 +1,9 @@
+<?php
+
+    include "../php/session_init.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,16 +25,16 @@
 
 <header class="header">
 
-    <a href="index.html" class="logo"> <span>L</span>ight<span>W</span>eight</a>
+    <a href="index.php" class="logo"> <span>L</span>ight<span>W</span>eight</a>
 
     <nav class="navbar">
-        <a href="index.html"style="background-color: red">Home</a>
-        <a href="about.php">Chi siamo</a>
-        <a href="features.html">Features</a>
-        <a href="prezzi.html">Prezzi</a>
-        <a href="trainers.html">Allenatori</a>
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
+        <a href="../html/index.php" style="background-color: red">Home</a>
+        <a href="../html/about.php">Chi siamo</a>
+        <a href="../html/features.php">Features</a>
+        <a href="../html/prezzi.php">Prezzi</a>
+        <a href="../html/trainers.php">Allenatori</a>
+        <a href="../html/blogs.php">Blogs</a>
+        <a href="../html/login.php">Login</a>
     </nav>
 
 </header>

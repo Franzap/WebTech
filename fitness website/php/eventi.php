@@ -31,13 +31,13 @@ include "../php/session_init.php";
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <nav class="navbar">
-        <a href="../../fitness%20website/html/index.html">Home</a>
-        <a href="../php/eventi.php" style="background-color: red">Eventi</a>
-        <a href="../../fitness%20website/php/prenotazioni.php">Prenotazioni</a>
-        <a href="../../fitness%20website/html/prezzi.html">Prezzi</a>
-        <a href="../../fitness%20website/html/trainers.html">Allenatori</a>
-        <a href="../../fitness%20website/php/profilo.php">Profilo</a>
-        <a href="../../fitness%20website/html/index.html"><button type="button" class="btn btn-danger">Logout <?php echo $_SESSION['ruolo']?></a>
+        <a href="../html/index.php" style="background-color: red">Home</a>
+        <a href="../html/about.php">Chi siamo</a>
+        <a href="../html/features.php">Features</a>
+        <a href="../html/prezzi.php">Prezzi</a>
+        <a href="../html/trainers.php">Allenatori</a>
+        <a href="../html/blogs.php">Blogs</a>
+        <a href="../html/login.php">Login</a>
     </nav>
 
 </header>

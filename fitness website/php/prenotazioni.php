@@ -26,18 +26,18 @@ include "../php/session_init.php";
 
 <header class="header">
 
-    <a href="index.html" class="logo"> <span>L</span>ight<span>W</span>eight</a>
+    <a href="../html/index.php" class="logo"> <span>L</span>ight<span>W</span>eight</a>
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
     <nav class="navbar">
-        <a href="../../fitness%20website/html/index.html">Home</a>
+        <a href="../php/homePage.php">Home</a>
         <a href="../php/eventi.php" >Eventi</a>
         <a href="../../fitness%20website/php/prenotazioni.php" style="background-color: red">Prenotazioni</a>
-        <a href="../../fitness%20website/html/prezzi.html">Prezzi</a>
-        <a href="../../fitness%20website/html/trainers.html">Allenatori</a>
+        <a href="../html/prezzi.php">Prezzi</a>
+        <a href="../html/trainers.php">Allenatori</a>
         <a href="../../fitness%20website/php/profilo.php">Profilo</a>
-        <a href="../../fitness%20website/html/index.html"><button type="button" class="btn btn-danger">Logout <?php echo $_SESSION['ruolo']?></a>
+        <a href="../html/index.php"><button type="button" class="btn btn-danger">Logout <?php echo $_SESSION['ruolo']?></a>
     </nav>
 
 </header>
@@ -111,7 +111,7 @@ include "../php/session_init.php";
             <div class="content">
                 <img src="../images/" alt="">
                 <h3>BOXE</h3>
-                <p>Il pugilato è uno degli sport da combattimento più antichi e noti, che prevede l'incontro tra due atleti diversi dentro un campo da combattimento denominato ring</p>
+                <p>Il pugilato è uno degli sport da combattimento più antichi e noti, che prevede l'incontro tra due atleti diversi dentro un campo da combattimento denominato ring.</p>
                 <a href="#" class="btn">Prenotati</a>
             </div>
         </div>

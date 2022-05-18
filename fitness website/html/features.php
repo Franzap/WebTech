@@ -1,3 +1,9 @@
+
+<?php
+
+include "../php/session_init.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>complete responsive fitness and gym website design</title>
-
+    
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- custom css file link  -->
@@ -18,75 +24,74 @@
 
 <header class="header">
 
-    <a href="index.html" class="logo"> <span>L</span>ight<span>W</span>eight</a>
+    <a href="index.php" class="logo"> <span>L</span>ight<span>W</span>eight</a>
 
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.php">Chi siamo</a>
-        <a href="features.html">Features</a>
-        <a href="prezzi.html" style="background-color: red">Prezzi</a>
-        <a href="trainers.html">Allenatori</a>
-        <a href="blogs.html">Blogs</a>
-        <a href="login.html">Login</a>
+        <a href="../html/index.php" style="background-color: red">Home</a>
+        <a href="../html/about.php">Chi siamo</a>
+        <a href="../html/features.php">Features</a>
+        <a href="../html/prezzi.php">Prezzi</a>
+        <a href="../html/trainers.php">Allenatori</a>
+        <a href="../html/blogs.php">Blogs</a>
+        <a href="../html/login.php">Login</a>
     </nav>
 
-
 </header>
-<ng-component></ng-component>
 
 <!-- header section ends     -->
 
-<!-- pricing section starts  -->
-<section class="pricing" id="pricing">
+<!-- features section starts  -->
 
-    <div class="plan">
-        <h3>Piano Economico</h3>
-        <div class="price"><span>€</span>30<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i> Cardio</p>
-            <p> <i class="fas fa-check"></i> Sala Pesi </p>
+<section class="features" id="features">
+
+    <br> <br> <br>
+
+    <h1 class="heading"> <span>Gym Features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="../images/f-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../images/icon-1.png" alt="">
+                <h3>body building</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
         </div>
-        <a href="#" class="btn">Scopri i Prezzi</a>
-    </div>
 
-    <div class="plan basic">
-        <h3>Piano Base</h3>
-        <div class="price"><span>€</span>50<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i> Personal Trainer</p>
-            <p> <i class="fas fa-check"></i> Cardio</p>
-            <p> <i class="fas fa-check"></i> Sala Pesi </p>
-            <p> <i class="fas fa-check"></i> Accesso ad un singolo corso a scelta </p>
-
+        <div class="box second">
+            <div class="image">
+                <img src="../images/f-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../images/icon-2.png" alt="">
+                <h3>gym for men</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
         </div>
-        <a href="#" class="btn">get started</a>
-    </div>
 
-    <div class="plan">
-        <h3>Piano Premium </h3>
-        <div class="price"><span>€</span>80<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i> personal trainer </p>
-            <p> <i class="fas fa-check"></i> cardio  </p>
-            <p> <i class="fas fa-check"></i> sala pesi </p>
-            <p> <i class="fas fa-check"></i> dieta </p>
-            <p> <i class="fas fa-check"></i> risultati complessivi </p>
-            <p> <i class="fas fa-check"></i> Accesso a tutti i corsi </p>
+        <div class="box">
+            <div class="image">
+                <img src="../images/f-img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="../images/icon-3.png" alt="">
+                <h3>gym for women</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, atque.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
         </div>
-        <a href="#" class="btn">get started</a>
-    </div>
 
-    <div class="plan">
-        <h3>Corso Tabata</h3>
-        <div class="price"><span>€</span>25<span>/mese</span></div>
-        <div class="list">
-            <p> <i class="fas fa-check"></i>Accesso illimitato al corso Tabata </p>
-
-        </div>
-        <a href="#" class="btn">Scopri i Prezzi</a>
     </div>
 
 </section>
+
+<!-- features section ends -->
+
 
 <!-- footer section starts  -->
 
@@ -136,10 +141,12 @@
 </section>
 
 
+
+
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
-<!-- footer section ends -->
 </body>
+<!-- footer section ends -->

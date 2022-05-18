@@ -4,5 +4,5 @@
 $_SESSION['utente'] = null;
 $_SESSION['ruolo'] = null;
 
-header('Location: index.html');
+header('Location: index.php');
 ?>
