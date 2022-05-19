@@ -4,14 +4,12 @@ include 'connection.php';
 
 session_start();
 
-
-if($_SESSION['ruolo'] == "Admin") {
-    header('Location: admin.php');
-} else if($_SESSION['ruolo'] == "PT") {
-    header('Location: pt.php');
-}
-
 ?>
+
+<?php
+include_once("navbarCliente.php");
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,15 +37,10 @@ if($_SESSION['ruolo'] == "Admin") {
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
-    <nav class="navbar">
-        <a href="../html/index.php" style="background-color: red">Home</a>
-        <a href="../php/eventi.php">Eventi</a>
-        <a href="../../fitness%20website/php/prenotazioni.php">Prenotazioni</a>
-        <a href="../html/prezzi.php">Prezzi</a>
-        <a href="../html/trainers.php">Allenatori</a>
-        <a href="../../fitness%20website/php/profilo.php">Profilo</a>
-        <a href="../html/index.php"><button type="button" class="btn btn-danger">Logout <?php echo $_SESSION['ruolo']?></a>
-    </nav>
+    <!-- START NAV -->
+    <?php navbar(); ?>
+    <!-- END NAV -->
+
 
 </header>
 <body>
