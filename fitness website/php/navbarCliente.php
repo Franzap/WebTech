@@ -2,7 +2,7 @@
 function navbar() {
     ?>
     <nav class="navbar">
-        <a href="../html/index.php" style="background-color: red">Home</a>
+        <a href="../html/index.php">Home</a>
         <a href="../php/eventi.php">Eventi</a>
         <a href="../../fitness%20website/php/prenotazioni.php">Prenotazioni</a>
         <a href="../html/prezzi.php">Prezzi</a>

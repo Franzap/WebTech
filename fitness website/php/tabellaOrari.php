@@ -1,3 +1,16 @@
+
+<?php
+
+
+include "../php/session_init.php";
+
+
+include_once("navbarCliente.php");
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +33,7 @@
     table { width: 175px; background-color: #000000; color: #FFFFFF; }
     th, td { width: 25px; }
 </style>
-<table border="0" cellspacing="10" cellpadding="10" align="center">
+<table class="table" border="0" cellspacing="10" cellpadding="10" align="center">
     <thead>
     <tr>
         <th>ORARI</th>

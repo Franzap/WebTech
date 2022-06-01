@@ -2,13 +2,12 @@
 
 include 'connection.php';
 
+include_once("navbarCliente.php");
+
 session_start();
 
 ?>
 
-<?php
-include_once("navbarCliente.php");
-?>
 
 
 <!DOCTYPE html>

@@ -35,7 +35,7 @@ while ($row = mysqli_fetch_array($trova_utente)){
 if ($Username === $nomeUtente && $Password === $passUtente){
 
     $_SESSION['utente'] = $nomeUtente;
-    $_SESSION['ruolo'] = $ruoloUtente;
+    $_SESSION['Ruolo'] = $ruoloUtente;
 
     header('Location: ../../fitness%20website/php/homePage.php');
     echo "ciao";
