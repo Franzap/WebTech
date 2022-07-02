@@ -1,106 +1,111 @@
-
-
 <?php
 
-include 'connection.php';
-
-session_start();
-
-if(isset($_POST['login'])){
-    echo "Operazione Andata a Buon Fine";
-} else {
-    echo "Qualcosa è andato storto, riprova";
-}
-
-$Username = $_POST['Username'];
-$Password = $_POST['Password'];
-
-$Username = mysqli_real_escape_string($connection , $Username);
-$Password = mysqli_real_escape_string($connection , $Password);
-
-$query = "SELECT * FROM Utente WHERE Username = '{$Username}'";
-
-$trova_utente = mysqli_query($connection, $query);
-
-if (!$trova_utente){
-    die('Richiesta Fallita' . mysqli_error($connection));
-}
-
-while ($row = mysqli_fetch_array($trova_utente)){
-    $nomeUtente = $row['Username'];
-    $passUtente = $row['Password'];
-    $ruoloUtente = $row['Ruolo'];
-}
-
-if ($Username === $nomeUtente && $Password === $passUtente){
-
-    $_SESSION['utente'] = $nomeUtente;
-    $_SESSION['Ruolo'] = $ruoloUtente;
-
-    header('Location: ../../fitness%20website/php/homePage.php');
-    echo "ciao";
-}else{
-    echo "Credenziali Sbagliate!!!";
-}
-
-
-/*
-// Now we check if the data from the login form was submitted, isset() will check if the data exists.
-if ( !isset($_POST['Username'], $_POST['Password']) ) {
-    // Could not get the data that should have been sent.
-    exit('Please fill both the username and password fields!');
-} else {
-    // echo "username" . $_POST['username'] . "password" . $_POST['password'];
-}
-
-$query = "SELECT * FROM user WHERE email = " . $_POST['Email'];
-
-while ($row = mysqli_fetch_array($))
-
-/*
-// query per selezionare utente che si sta loggando
-
-// query tramite connessione al db
-// $result = $connection->query($query);
-
-// Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-if ($stmt = $connection->prepare('SELECT idUser, password FROM user WHERE email = ?')) {
-    // Bind parameters (s = string, i = int, b = blob, etc), in our case the username is a string so we use "s"
-    $stmt->bind_param('s', $_POST['username']);
-    $stmt->execute();
-    // Store the result so we can check if the account exists in the database.
-    $stmt->store_result();
-
-    if ($stmt->num_rows > 0) {
-        $stmt->bind_result($id, $password);
-        $stmt->fetch();
-        // Account exists, now we verify the password.
-        // Note: remember to use password_hash in your registration file to store the hashed passwords.
-        if ($_POST['password'] === $password) {
-            // Verification success! User has logged-in!
-            // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
-            //session_regenerate_id();
-            $_SESSION['loggedin'] = TRUE;
-            $_SESSION['name'] = $_POST['username'];
-            $_SESSION['id'] = $id;
-
-        } else {
-            // Incorrect password
-            echo 'Incorrect username and/or password!';
-        }
-    } else {
-        // Incorrect username
-        echo 'Incorrect username and/or password!';
-    }
-
-    if(isset($_SESSION['id'])) {
-        header("Location: ../home-page.php");
-    }
-
-
-
-
-    $stmt->close();
-}*/
+include "../php/session_init.php";
+include "../php/footer.php"
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive fitness and gym website design</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts      -->
+
+<header class="header">
+
+    <a href="index.php" class="logo"> <span>L</span>ight<span>W</span>eight</a>
+
+    <nav class="navbar">
+        <a href="../html/index.php" style="background-color: red">Home</a>
+        <a href="../html/about.php">Chi siamo</a>
+        <a href="../html/features.php">Features</a>
+        <a href="../html/prezzi.php">Prezzi</a>
+        <a href="../html/trainers.php">Allenatori</a>
+        <a href="../html/blogs.php">Blogs</a>
+        <a href="../html/login.php">Login</a>
+    </nav>
+
+</header>
+
+<!-- header section ends     -->
+
+<div class="login-wrap">
+    <div class="login-html">
+
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Accedi</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registrati</label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <form method="post" action="../../fitness%20website/php/login.php">
+
+                    <div class="group">
+                        <br>
+                        <label for="user" class="label"></label>
+                        <input type="text" name="Username" placeholder="Username" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label"></label>
+                        <input type="password" name="Password" placeholder="Password" class="input" data-type="password">
+                    </div>
+
+                    <div class="group">
+                        <br><br>
+                        <input type="submit" name="login" class="button" value="Accedi">
+
+                    </div>
+                    <div class="hr"></div>
+                </form>
+            </div>
+
+
+            <div class="sign-up-htm">
+                <form method="post"action="../../fitness%20website/php/register.php">
+                    <div class="group">
+                        <input  type="text" name="Email" placeholder="Email" class="input">
+                    </div>
+                    <div class="group">
+                        <input id="user" type="text" name="Username" placeholder="Username" class="input">
+                    </div>
+                    <div class="group">
+                        <input type="password" class="input" name="Password" placeholder="Password" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="pass" type="password" class="input" placeholder="Ripeti Password" data-type="password">
+                    </div>
+
+                    <div class="group">
+                        <input type="submit" class="button" name="register" value="Registrati">
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</a>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- footer section starts  -->
+
+
+<!-- START FOOTER -->
+<?php footer(); ?>
+<!-- END FOOTER -->
+
+
+</body>
+</html>
