@@ -1,6 +1,6 @@
 <?php
 function footer(){
-    ?>
+?>
 <!-- footer section starts  -->
 <html>
 <body>

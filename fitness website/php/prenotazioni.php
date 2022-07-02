@@ -1,10 +1,5 @@
 <?php
-
-include "../php/session_init.php";
-
-
 include_once("navbarCliente.php");
-
 ?>
 
 <!DOCTYPE html>
@@ -115,39 +110,4 @@ include_once("navbarCliente.php");
 
 
     </div>
-    <!--<div class="swiper home-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide" style="background: url(../images/tabata.jpeg) no-repeat;">
-                <div class="content">
-                    <span>TABATA</span>
-                    <h4>Il protocollo Tabata nasce con l'obiettivo di migliorare le caratteristiche aerobiche e anaerobiche d'oltre soglia (anaerobica). </h4>
-                    <a href="#" class="btn">Prenotati</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide slide" style="background: url(../images/yoga.jpeg) no-repeat;">
-                <div class="content">
-                    <span>be strong, be fit</span>
-                    <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn">get started</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide slide" style="background: url(../images/home-bg-3.jpg) no-repeat;">
-                <div class="content">
-                    <span>be strong, be fit</span>
-                    <h3>Make yourself stronger than your excuses.</h3>
-                    <a href="#" class="btn">get started</a>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="swiper-pagination"></div>
-
-    </div>
--->
 </section>

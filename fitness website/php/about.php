@@ -1,8 +1,5 @@
 <?php
-
-    include "../php/session_init.php";
     include "../php/footer.php"
-
 ?>
 
 
@@ -40,10 +37,6 @@
 
 </header>
 
-<!-- header section ends     -->
-
-<!-- about section starts  -->
-
 <section class="about" id="about">
 
     <div class="image">
@@ -77,11 +70,8 @@
 
 </section>
 
-<!-- about section ends -->
 
-<!-- START FOOTER -->
 <?php footer(); ?>
-<!-- END FOOTER -->
 
 
 </body>

@@ -1,9 +1,6 @@
 
 <?php
-
-include "../php/session_init.php";
 include "../php/footer.php"
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

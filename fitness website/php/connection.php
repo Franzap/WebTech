@@ -2,8 +2,8 @@
 
     $servername = "localhost";
     $username = "root";
-    $password = "root";
-    $databasename = "Utente";
+    $password = "MYSQLsdAbdcf3!";
+    $databasename = "db_lightweight";
 
     // Connessione
     $connection = new mysqli($servername, $username, $password, $databasename);

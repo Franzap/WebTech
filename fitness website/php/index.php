@@ -1,9 +1,5 @@
 <?php
-
-include "../php/session_init.php";
-include_once("../php/footer.php");
 include "navbarGenerica.php"
-
 ?>
 
 <!DOCTYPE html>
@@ -15,22 +11,12 @@ include "navbarGenerica.php"
     <title>complete responsive fitness and gym website design</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
-<!-- header section starts      -->
 
-<!-- START NAVBAR -->
 <?php navbarGenerica(); ?>
-<!-- END NAVBAR -->
 
-<!-- header section ends     -->
-
-<!-- home section starts  -->
 
 <section class="home" id="home">
 
@@ -69,10 +55,6 @@ include "navbarGenerica.php"
     </div>
 
 </section>
-
-<!-- home section ends -->
-
-<!-- about section starts  -->
 
 <section class="about" id="about">
 

@@ -1,13 +1,6 @@
 
 <?php
-
-
-include "../php/session_init.php";
-
-
 include_once("navbarCliente.php");
-
-
 ?>
 
 
@@ -33,7 +26,7 @@ include_once("navbarCliente.php");
     table { width: 175px; background-color: #000000; color: #FFFFFF; }
     th, td { width: 25px; }
 </style>
-<table class="table" border="0" cellspacing="10" cellpadding="10" align="center">
+<table class="table" cellspacing="10" cellpadding="10" text-align="center">
     <thead>
     <tr>
         <th>ORARI</th>
@@ -58,67 +51,7 @@ include_once("navbarCliente.php");
         <td>CHIUSO</td>
 
     </tr>
-    <tr>
-        <td>10:30 - 12:30</td>
-        <td>Valore2</td>
-        <td>Valore3</td>
-        <td>Valore4</td>
-        <td>Valore5</td>
-        <td>Valore6</td>
-        <td>Valore7</td>
-        <td>CHIUSO</td>
-    </tr>
-    <tr>
-        <td>12:30 - 14:30</td>
-        <td>Valore2</td>
-        <td>Valore3</td>
-        <td>Valore4</td>
-        <td>Valore5</td>
-        <td>Valore6</td>
-        <td>Valore7</td>
-        <td>CHIUSO</td>
-    </tr>
-    <tr>
-        <td>14:30 - 16:30</td>
-        <td>Valore2</td>
-        <td>Valore3</td>
-        <td>Valore4</td>
-        <td>Valore5</td>
-        <td>Valore6</td>
-        <td>Valore7</td>
-        <td>CHIUSO</td>
-    </tr>
-    <tr>
-        <td>16:30 - 18:30</td>
-        <td>Valore2</td>
-        <td>Valore3</td>
-        <td>Valore4</td>
-        <td>Valore5</td>
-        <td>Valore6</td>
-        <td>Valore7</td>
-        <td>CHIUSO</td>
-    </tr>
-    <tr>
-        <td>18:30 - 20:30</td>
-        <td>Valore2</td>
-        <td>Valore3</td>
-        <td>Valore4</td>
-        <td>Valore5</td>
-        <td>Valore6</td>
-        <td>Valore7</td>
-        <td>CHIUSO</td>
-    </tr>
-    <tr>
-        <td>20:30 - 22:30</td>
-        <td>Valore2</td>
-        <td>Valore3</td>
-        <td>Valore4</td>
-        <td>Valore5</td>
-        <td>Valore6</td>
-        <td>Valore7</td>
-        <td>CHIUSO</td>
-    </tr>
-
+ 
     </tbody>
 </table>
 </html>
